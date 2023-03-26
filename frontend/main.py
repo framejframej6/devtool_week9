@@ -28,8 +28,6 @@ url = "http://54.175.184.14:8088"
 @app.route('/')
 def home():
    
-    env_var_image = os.environ['APP_IMAGE']
-
     # Load the image
     image = cv2.imread("building.jpg")
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
