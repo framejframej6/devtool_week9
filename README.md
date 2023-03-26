@@ -8,5 +8,5 @@ docker build -t fastapi-docker_lab5 .
 cd ..
 cd frontend
 docker build -t flask-docker-app .
-docker run -p 8088:80 fastapi-docker_lab5 
-docker run -p 8081:8081 -d --name container_building.jpg  -e APP_COLOR=building.jpg flask-docker-app```
+docker run -d -p 8088:80 fastapi-docker_lab5 
+docker run -p 8081:8081 flask-docker-app
