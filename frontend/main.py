@@ -29,7 +29,7 @@ url = "http://54.175.184.14:8088"
 def home():
    
     # Load the image
-    image = cv2.imread("building.jpg")
+    image = cv2.imread("main.jpg")
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     image_string = encode_image(image)
 
